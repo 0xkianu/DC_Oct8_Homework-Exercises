@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+* {
+    box-sizing: inherit;
+}
+#score-header {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+#score-span {
+    font-family: 'Press Start 2P', cursive;
+    color: #b5d4b4;
+    font-size: 16px;
+    margin: 0 10% 0 0;
+    padding: 0;
+    border:0;
+}
+
+#gameboard {
+    width: 100%;
+    height: 95%;
+    color: white;
+    border-top:30px solid #b5d4b4;
+    border-left:30px solid #b5d4b4;
+    border-right:30px solid #b5d4b4;
+    border-radius: 0.2%;
+}
+
+#brick-board {
+    width: 99.8%;
+    height: 98%;
+}
+
+#paddle {
+    width: 15%;
+    height: 2%;
+    background-color: #b5d4b4;
+    padding: 0; margin: 0; border: 0;
+    position: absolute;
+    left: 45%;
+    bottom: 1%;
+}
+
+#gameboard #brick-board > div {
+    width: 100%;
+    height: 5.55%;
+}
+
+.blank-row {
+    background-color: black;
+}
+
+.brick-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.brick-container {
+    display: grid;
+    border-radius: 5%;
+    background-color: white;
+    margin: 1px;
+}
+
+.blank-container {
+    display: grid;
+    background-color: black;
+}
+
+.red-brick {
+    border-radius: 5%;
+    background-color: red;
+    position: relative;
+    top: 2%;
+    left: 1%;
+}
+
+.yellow-brick {
+    border-radius: 5%;
+    background-color: yellow;
+    position: relative;
+    top: 2%;
+    left: 1%;
+}
+
+.blank-brick {
+    background-color: black;
+}
+
+.green-brick {
+    border-radius: 5%;
+    background-color: green;
+    position: relative;
+    top: 2%;
+    left: 1%;
+}
+
+.blue-brick {
+    border-radius: 5%;
+    background-color: blue;
+    position: relative;
+    top: 3%;
+    left: 1%;
+}
+
+#ball1 {
+    width: 15%;
+    height: 40%;
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px white;
+    position: relative;
+    top: 4%;
+    left: 3%;
+}
+
+#ball2 {
+    width: 15%;
+    height: 40%;
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px white;
+    position: relative;
+    top: 4%;
+    left: 82%;
+}
